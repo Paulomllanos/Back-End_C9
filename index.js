@@ -1,6 +1,7 @@
 // Librerias
 const express = require('express');
 const productRouter = require('./routes/productRoute')
+const userRouter = require('./routes/userRoute')
 require('dotenv').config();
 
 // Traemos la conexion de la abse de dtaos al servidor
@@ -15,6 +16,7 @@ const app = express();
 app.use(express.json());
 // Con esto usamos una router en nuestro servidor
 app.use(productRouter);
+app.use(userRouter);
 
 
 

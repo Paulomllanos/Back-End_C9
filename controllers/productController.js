@@ -10,4 +10,16 @@ const getProducts = async(req, res) => {
     }
 }
 
-module.exports = getProducts
+const createProduct = async(req, res) => {
+    try {
+        const newProduct = new Product(req.body);
+        await newProduct.save();
+
+        res.json({sucess: true, msg: "Create product!", info: newProduct})
+
+    } catch (error) {
+        res.status(500).json({success: false, msg: error.message})
+    }
+}
+
+module.exports = {getProducts, createProduct}
