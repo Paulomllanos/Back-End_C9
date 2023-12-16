@@ -89,5 +89,4 @@ const reduceStock = async (req, res) => {
 }
 
 
-
 module.exports = {getProducts, createProduct, getProductById, editProduct, deleteProduct, reduceStock}

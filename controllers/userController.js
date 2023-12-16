@@ -101,4 +101,16 @@ const loginUser = async(req, res) => {
     }
 }
 
-module.exports = {createUser, getUsers, editUser, deleteUser, loginUser, getProfile};
+
+const getVerifyUser = async(req, res) => {
+    try {
+        const {id} = req.auth;
+        const getInfoUser = await User.findById(id).select("-password -salt")
+
+        res.json({success: true, msg: `Informacion de: ${getInfoUser.email}`, info: getInfoUser })
+    } catch (error) {
+        res.json({success: false, message: error.message})
+    }
+}
+
+module.exports = {createUser, getUsers, editUser, deleteUser, loginUser, getProfile, getVerifyUser};
