@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const jwt = require('jsonwebtoken');
-const crypto = require('crypto')
+const crypto = require('crypto');
+
 
 const userSchema = new mongoose.Schema({
     name: {
@@ -30,7 +31,7 @@ const userSchema = new mongoose.Schema({
     isAdmin: {
         type: Boolean,
         default: false
-    },
+    }
     // favoriteProducts: {
     //     type: mongoose.Types.ObjectId,
     //     ref: "product"

@@ -19,7 +19,6 @@ const productSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true,
-        lowercase: true,
         minLength: 3,
         maxLength: 130,
         trim: true
@@ -42,13 +41,14 @@ const productSchema = new mongoose.Schema({
             type: Number,
             min: 0.1
         },
-        color: [colorsSchema]
+        color: {colorsSchema}
 
     },
     stock: {
         type: Number,
-        min: 0,
-        max: 100
+        default: 0,
+        required: true,
+        min: 0
     }
 })
 

@@ -1,0 +1,130 @@
+[
+    {
+      "sku": "333123",
+      "name": "Comfort Walk",
+      "price": 4999,
+      "image": "https://images.unsplash.com/photo-1659785568847-2c9581fe7d98?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "details": {
+        "typeProduct": "Running Shoes",
+        "material": "Mesh and Synthetic",
+        "weight": 0.5,
+        "color": {
+          "red": "FF0000",
+          "blue": "0000FF"
+        }
+      },
+      "stock": 100
+    },
+    {
+      "sku": "321456",
+      "name": "Fashion Sneakers",
+      "price": 7999,
+      "image": "https://images.unsplash.com/photo-1659785568869-aa061a0f8e87?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "details": {
+        "typeProduct": "Casual Shoes",
+        "material": "Leather",
+        "weight": 0.6,
+        "color": {
+          "red": "FF4500",
+          "blue": "4169E1"
+        }
+      },
+      "stock": 50
+    },
+    {
+      "sku": "444789",
+      "name": "Trail Blazer",
+      "price": 8999,
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "details": {
+        "typeProduct": "Hiking Boots",
+        "material": "Waterproof Leather",
+        "weight": 0.8,
+        "color": {
+          "red": "8B0000",
+          "blue": "4682B4"
+        }
+      },
+      "stock": 75
+    },
+    {
+      "sku": "222012",
+      "name": "Gym Performer",
+      "price": 6999,
+      "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "details": {
+        "typeProduct": "Athletic Shoes",
+        "material": "Breathable Knit",
+        "weight": 0.4,
+        "color": {
+          "red": "DC143C",
+          "blue": "1E90FF"
+        }
+      },
+      "stock": 120
+    },
+    {
+      "sku": "333345",
+      "name": "Classic Canvas",
+      "price": 3999,
+      "image": "https://images.unsplash.com/photo-1539185441755-769473a23570?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "details": {
+        "typeProduct": "Canvas Sneakers",
+        "material": "Cotton",
+        "weight": 0.4,
+        "color": {
+          "red": "FF6347",
+          "blue": "6495ED"
+        }
+      },
+      "stock": 90
+    },
+     {
+        "sku": "442123",
+        "name": "Comfort Walk",
+        "price": 4999,
+        "image": "https://images.unsplash.com/photo-1473010350295-2c82192ebd8e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "details": {
+          "typeProduct": "Running Shoes",
+          "material": "Mesh and Synthetic",
+          "weight": 0.5,
+          "color": {
+            "red": "FF0000",
+            "blue": "0000FF"
+          }
+        },
+        "stock": 100
+      },
+      {
+        "sku": "989456",
+        "name": "Fashion Sneakers",
+        "price": 7999,
+        "image": "https://images.unsplash.com/photo-1570464197285-9949814674a7?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "details": {
+          "typeProduct": "Casual Shoes",
+          "material": "Leather",
+          "weight": 0.6,
+          "color": {
+            "red": "FF4500",
+            "blue": "4169E1"
+          }
+        },
+        "stock": 50
+      },
+      {
+        "sku": "933789",
+        "name": "Trail Blazer",
+        "price": 8999,
+        "image": "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "details": {
+          "typeProduct": "Hiking Boots",
+          "material": "Waterproof Leather",
+          "weight": 0.8,
+          "color": {
+            "red": "8B0000",
+            "blue": "4682B4"
+          }
+        },
+        "stock": 75
+    }
+  ]

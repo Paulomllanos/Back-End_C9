@@ -1,7 +1,5 @@
 const User = require('../models/User');
 
-
-
 const createUser = async(req, res) => {
    
     try {
@@ -17,7 +15,12 @@ const createUser = async(req, res) => {
         await newUser.save();
         
     
-        res.json({success: true, message: "Usuario Creado", info: newUser._id, token: newUser.generateToken()})
+        res.status(201).json({
+            success: true, 
+            message: "Usuario Creado", 
+            info: newUser._id, 
+            token: newUser.generateToken()
+        })
             
     } catch (error) {
         res.json({success: false, message: error.message})
@@ -26,9 +29,20 @@ const createUser = async(req, res) => {
 
 const getUsers = async(req, res) => {
     try {
-        const users = await User.find();
+        const users = await User.find().select('-password -salt');
         // .populate('favoriteProducts')
         res.json({success: true, info: users })
+    } catch (error) {
+        res.json({success: false, message: error.message})
+    }
+}
+
+const getProfile = async(req, res) => {
+    try {
+        const {id} = req.params;
+        const getInfoUser = await User.findById(id).select("-password -salt")
+
+        res.json({success: true, info: getInfoUser })
     } catch (error) {
         res.json({success: false, message: error.message})
     }
@@ -87,4 +101,4 @@ const loginUser = async(req, res) => {
     }
 }
 
-module.exports = {createUser, getUsers, editUser, deleteUser, loginUser};
+module.exports = {createUser, getUsers, editUser, deleteUser, loginUser, getProfile};
